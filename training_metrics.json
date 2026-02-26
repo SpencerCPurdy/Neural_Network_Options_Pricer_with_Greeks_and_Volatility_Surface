@@ -1,0 +1,2384 @@
+{
+  "generated_at": "2026-02-25T05:09:21.484542",
+  "script_version": "v3_augmented_greeks",
+  "data_source": "real_yfinance",
+  "device": "cuda",
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "symbol": "AAPL",
+  "stock_price": 272.14,
+  "historical_vol": 0.32202769845339957,
+  "dividend_yield": 0.38,
+  "n_options_total": 1130,
+  "n_calls": 658,
+  "n_puts": 472,
+  "n_train": 526,
+  "n_test": 132,
+  "n_augmented": 4120,
+  "normalization": {
+    "input_mean": [
+      272.1399841308594,
+      274.9881591796875,
+      0.6989312171936035,
+      0.381357878446579,
+      0.05000000819563866
+    ],
+    "input_std": [
+      35.09150314331055,
+      86.99630737304688,
+      0.7029141783714294,
+      0.16502360999584198,
+      9.999999974752427e-07
+    ],
+    "output_mean": 46.11495590209961,
+    "output_std": 53.765201568603516
+  },
+  "pinn": {
+    "epochs_trained": 2059,
+    "training_time_seconds": 76.72189331054688,
+    "best_val_loss": 0.1661042422056198,
+    "best_epoch": 2058,
+    "loss_history": [
+      {
+        "epoch": 0,
+        "train_mse": 1691.861474609375,
+        "train_physics": 0.0,
+        "val_loss": 1004.7614135742188,
+        "val_mae": 24.261863708496094,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 10,
+        "train_mse": 121.91751556396484,
+        "train_physics": 0.0,
+        "val_loss": 245.4097900390625,
+        "val_mae": 10.937387466430664,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 20,
+        "train_mse": 75.90025405883789,
+        "train_physics": 0.0,
+        "val_loss": 107.09376525878906,
+        "val_mae": 8.06246566772461,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 30,
+        "train_mse": 39.81886329650879,
+        "train_physics": 0.0,
+        "val_loss": 77.32054901123047,
+        "val_mae": 6.46096658706665,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 40,
+        "train_mse": 20.55371026992798,
+        "train_physics": 0.0,
+        "val_loss": 38.71715545654297,
+        "val_mae": 4.556820869445801,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 50,
+        "train_mse": 19.24677391052246,
+        "train_physics": 0.0,
+        "val_loss": 30.114582061767578,
+        "val_mae": 3.783496856689453,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 60,
+        "train_mse": 22.05859031677246,
+        "train_physics": 0.0,
+        "val_loss": 28.603572845458984,
+        "val_mae": 4.497763156890869,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 70,
+        "train_mse": 30.442608642578126,
+        "train_physics": 0.0,
+        "val_loss": 42.06114196777344,
+        "val_mae": 5.514008522033691,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 80,
+        "train_mse": 32.03783531188965,
+        "train_physics": 0.0,
+        "val_loss": 35.87117004394531,
+        "val_mae": 4.721798896789551,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 90,
+        "train_mse": 14.261209869384766,
+        "train_physics": 0.0,
+        "val_loss": 40.958045959472656,
+        "val_mae": 4.956003189086914,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 100,
+        "train_mse": 8.923648643493653,
+        "train_physics": 0.0,
+        "val_loss": 23.605974197387695,
+        "val_mae": 3.512962579727173,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 110,
+        "train_mse": 15.314946937561036,
+        "train_physics": 0.0,
+        "val_loss": 22.381948471069336,
+        "val_mae": 3.6077520847320557,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 120,
+        "train_mse": 17.806418228149415,
+        "train_physics": 0.0,
+        "val_loss": 38.102027893066406,
+        "val_mae": 4.1620612144470215,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 130,
+        "train_mse": 7.906896781921387,
+        "train_physics": 0.0,
+        "val_loss": 32.69629669189453,
+        "val_mae": 3.925419807434082,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 140,
+        "train_mse": 8.030980944633484,
+        "train_physics": 0.0,
+        "val_loss": 6.613575458526611,
+        "val_mae": 1.9243026971817017,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 150,
+        "train_mse": 6.882648181915283,
+        "train_physics": 0.0,
+        "val_loss": 23.868432998657227,
+        "val_mae": 3.9057767391204834,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 160,
+        "train_mse": 12.245372772216797,
+        "train_physics": 0.0,
+        "val_loss": 25.035011291503906,
+        "val_mae": 3.480856418609619,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 170,
+        "train_mse": 11.25549578666687,
+        "train_physics": 0.0,
+        "val_loss": 8.826752662658691,
+        "val_mae": 1.9686510562896729,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 180,
+        "train_mse": 10.01567440032959,
+        "train_physics": 0.0,
+        "val_loss": 17.061471939086914,
+        "val_mae": 2.99770450592041,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 190,
+        "train_mse": 16.619309616088866,
+        "train_physics": 0.0,
+        "val_loss": 17.00144386291504,
+        "val_mae": 3.256037950515747,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 200,
+        "train_mse": 16.421978664398193,
+        "train_physics": 0.0,
+        "val_loss": 23.476083755493164,
+        "val_mae": 3.681399345397949,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 210,
+        "train_mse": 9.367899894714355,
+        "train_physics": 0.0,
+        "val_loss": 19.603038787841797,
+        "val_mae": 3.224775552749634,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 220,
+        "train_mse": 6.518765592575074,
+        "train_physics": 0.0,
+        "val_loss": 12.549623489379883,
+        "val_mae": 2.59671688079834,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 230,
+        "train_mse": 10.936410045623779,
+        "train_physics": 0.0,
+        "val_loss": 41.98181915283203,
+        "val_mae": 4.479460716247559,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 240,
+        "train_mse": 13.333305358886719,
+        "train_physics": 0.0,
+        "val_loss": 19.773313522338867,
+        "val_mae": 3.7070159912109375,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 250,
+        "train_mse": 8.658003234863282,
+        "train_physics": 0.0,
+        "val_loss": 15.756340980529785,
+        "val_mae": 2.6167709827423096,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 260,
+        "train_mse": 13.050687408447265,
+        "train_physics": 0.0,
+        "val_loss": 24.527795791625977,
+        "val_mae": 4.265065670013428,
+        "lr": 0.0003,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 270,
+        "train_mse": 7.622571182250977,
+        "train_physics": 0.0,
+        "val_loss": 2.6382458209991455,
+        "val_mae": 1.27176034450531,
+        "lr": 0.00015,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 280,
+        "train_mse": 3.863462710380554,
+        "train_physics": 0.0,
+        "val_loss": 4.758626461029053,
+        "val_mae": 1.8098963499069214,
+        "lr": 0.00015,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 290,
+        "train_mse": 9.810284042358399,
+        "train_physics": 0.0,
+        "val_loss": 2.208627462387085,
+        "val_mae": 1.244594693183899,
+        "lr": 0.00015,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 300,
+        "train_mse": 7.725736045837403,
+        "train_physics": 0.0,
+        "val_loss": 4.398414611816406,
+        "val_mae": 1.7011688947677612,
+        "lr": 0.00015,
+        "physics_weight": 0.0
+      },
+      {
+        "epoch": 310,
+        "train_mse": 2.852188754081726,
+        "train_physics": 50.0,
+        "val_loss": 5.391904354095459,
+        "val_mae": 1.7229087352752686,
+        "lr": 0.00015,
+        "physics_weight": 0.0002
+      },
+      {
+        "epoch": 320,
+        "train_mse": 3.659780669212341,
+        "train_physics": 50.0,
+        "val_loss": 4.994255542755127,
+        "val_mae": 1.6627342700958252,
+        "lr": 0.00015,
+        "physics_weight": 0.0004
+      },
+      {
+        "epoch": 330,
+        "train_mse": 3.828183126449585,
+        "train_physics": 50.0,
+        "val_loss": 6.816270351409912,
+        "val_mae": 1.9888932704925537,
+        "lr": 0.00015,
+        "physics_weight": 0.0006
+      },
+      {
+        "epoch": 340,
+        "train_mse": 3.1570874214172364,
+        "train_physics": 50.0,
+        "val_loss": 7.6946492195129395,
+        "val_mae": 2.258028030395508,
+        "lr": 0.00015,
+        "physics_weight": 0.0008
+      },
+      {
+        "epoch": 350,
+        "train_mse": 3.708765959739685,
+        "train_physics": 50.0,
+        "val_loss": 2.250476837158203,
+        "val_mae": 1.1674264669418335,
+        "lr": 0.00015,
+        "physics_weight": 0.001
+      },
+      {
+        "epoch": 360,
+        "train_mse": 1.377975082397461,
+        "train_physics": 50.0,
+        "val_loss": 3.3995020389556885,
+        "val_mae": 1.3388535976409912,
+        "lr": 0.00015,
+        "physics_weight": 0.0012
+      },
+      {
+        "epoch": 370,
+        "train_mse": 2.798409128189087,
+        "train_physics": 50.0,
+        "val_loss": 7.011745929718018,
+        "val_mae": 2.1702098846435547,
+        "lr": 0.00015,
+        "physics_weight": 0.0014000000000000002
+      },
+      {
+        "epoch": 380,
+        "train_mse": 1.6703590393066405,
+        "train_physics": 50.0,
+        "val_loss": 2.1128382682800293,
+        "val_mae": 1.1305984258651733,
+        "lr": 0.00015,
+        "physics_weight": 0.0016
+      },
+      {
+        "epoch": 390,
+        "train_mse": 4.991476774215698,
+        "train_physics": 50.0,
+        "val_loss": 6.116142272949219,
+        "val_mae": 2.007606267929077,
+        "lr": 0.00015,
+        "physics_weight": 0.0018
+      },
+      {
+        "epoch": 400,
+        "train_mse": 3.5098731994628904,
+        "train_physics": 50.0,
+        "val_loss": 6.444934844970703,
+        "val_mae": 2.18532395362854,
+        "lr": 0.00015,
+        "physics_weight": 0.002
+      },
+      {
+        "epoch": 410,
+        "train_mse": 3.321272540092468,
+        "train_physics": 50.0,
+        "val_loss": 5.350749969482422,
+        "val_mae": 2.0281193256378174,
+        "lr": 0.00015,
+        "physics_weight": 0.0022
+      },
+      {
+        "epoch": 420,
+        "train_mse": 2.3920138835906983,
+        "train_physics": 50.0,
+        "val_loss": 5.7614030838012695,
+        "val_mae": 1.8237351179122925,
+        "lr": 0.00015,
+        "physics_weight": 0.0024
+      },
+      {
+        "epoch": 430,
+        "train_mse": 2.7711276769638062,
+        "train_physics": 50.0,
+        "val_loss": 2.5595052242279053,
+        "val_mae": 1.219132900238037,
+        "lr": 0.00015,
+        "physics_weight": 0.0026000000000000003
+      },
+      {
+        "epoch": 440,
+        "train_mse": 3.3149272441864013,
+        "train_physics": 50.0,
+        "val_loss": 9.644007682800293,
+        "val_mae": 2.72864031791687,
+        "lr": 0.00015,
+        "physics_weight": 0.0028000000000000004
+      },
+      {
+        "epoch": 450,
+        "train_mse": 1.6306326627731322,
+        "train_physics": 50.0,
+        "val_loss": 4.341503143310547,
+        "val_mae": 1.6454648971557617,
+        "lr": 0.00015,
+        "physics_weight": 0.003
+      },
+      {
+        "epoch": 460,
+        "train_mse": 5.761278390884399,
+        "train_physics": 50.0,
+        "val_loss": 9.179591178894043,
+        "val_mae": 2.540346622467041,
+        "lr": 0.00015,
+        "physics_weight": 0.0032
+      },
+      {
+        "epoch": 470,
+        "train_mse": 2.159458303451538,
+        "train_physics": 50.0,
+        "val_loss": 2.2703404426574707,
+        "val_mae": 1.1556199789047241,
+        "lr": 0.00015,
+        "physics_weight": 0.0034000000000000002
+      },
+      {
+        "epoch": 480,
+        "train_mse": 3.709560990333557,
+        "train_physics": 50.0,
+        "val_loss": 4.461967468261719,
+        "val_mae": 1.735246181488037,
+        "lr": 0.00015,
+        "physics_weight": 0.0036
+      },
+      {
+        "epoch": 490,
+        "train_mse": 1.8939202308654786,
+        "train_physics": 50.0,
+        "val_loss": 7.406083106994629,
+        "val_mae": 2.4019415378570557,
+        "lr": 0.00015,
+        "physics_weight": 0.0038
+      },
+      {
+        "epoch": 500,
+        "train_mse": 1.2961885571479796,
+        "train_physics": 50.0,
+        "val_loss": 2.694143295288086,
+        "val_mae": 1.2682276964187622,
+        "lr": 0.00015,
+        "physics_weight": 0.004
+      },
+      {
+        "epoch": 510,
+        "train_mse": 3.576737403869629,
+        "train_physics": 50.0,
+        "val_loss": 1.3816840648651123,
+        "val_mae": 0.9365724325180054,
+        "lr": 0.00015,
+        "physics_weight": 0.0042
+      },
+      {
+        "epoch": 520,
+        "train_mse": 3.5357388973236086,
+        "train_physics": 50.0,
+        "val_loss": 7.029655933380127,
+        "val_mae": 2.182927370071411,
+        "lr": 0.00015,
+        "physics_weight": 0.0044
+      },
+      {
+        "epoch": 530,
+        "train_mse": 2.6531999111175537,
+        "train_physics": 50.0,
+        "val_loss": 4.136438369750977,
+        "val_mae": 1.5868946313858032,
+        "lr": 0.00015,
+        "physics_weight": 0.0046
+      },
+      {
+        "epoch": 540,
+        "train_mse": 1.2526277542114257,
+        "train_physics": 50.0,
+        "val_loss": 3.6908926963806152,
+        "val_mae": 1.3763763904571533,
+        "lr": 0.00015,
+        "physics_weight": 0.0048
+      },
+      {
+        "epoch": 550,
+        "train_mse": 3.721941602230072,
+        "train_physics": 50.0,
+        "val_loss": 1.6968994140625,
+        "val_mae": 0.997612476348877,
+        "lr": 0.00015,
+        "physics_weight": 0.005
+      },
+      {
+        "epoch": 560,
+        "train_mse": 1.8862752318382263,
+        "train_physics": 50.0,
+        "val_loss": 6.912093162536621,
+        "val_mae": 2.1463239192962646,
+        "lr": 0.00015,
+        "physics_weight": 0.005200000000000001
+      },
+      {
+        "epoch": 570,
+        "train_mse": 2.426367712020874,
+        "train_physics": 50.0,
+        "val_loss": 2.813391923904419,
+        "val_mae": 1.337159276008606,
+        "lr": 0.00015,
+        "physics_weight": 0.0054
+      },
+      {
+        "epoch": 580,
+        "train_mse": 3.085569071769714,
+        "train_physics": 50.0,
+        "val_loss": 1.4972904920578003,
+        "val_mae": 0.9876371622085571,
+        "lr": 0.00015,
+        "physics_weight": 0.005600000000000001
+      },
+      {
+        "epoch": 590,
+        "train_mse": 2.0599755525588987,
+        "train_physics": 50.0,
+        "val_loss": 6.755168914794922,
+        "val_mae": 2.0857198238372803,
+        "lr": 0.00015,
+        "physics_weight": 0.0058
+      },
+      {
+        "epoch": 600,
+        "train_mse": 1.70034259557724,
+        "train_physics": 50.0,
+        "val_loss": 12.346673011779785,
+        "val_mae": 3.1891186237335205,
+        "lr": 0.00015,
+        "physics_weight": 0.006
+      },
+      {
+        "epoch": 610,
+        "train_mse": 2.4281485080718994,
+        "train_physics": 50.0,
+        "val_loss": 7.652192115783691,
+        "val_mae": 1.8839539289474487,
+        "lr": 0.00015,
+        "physics_weight": 0.0062
+      },
+      {
+        "epoch": 620,
+        "train_mse": 3.857099103927612,
+        "train_physics": 50.0,
+        "val_loss": 5.038113117218018,
+        "val_mae": 1.9314364194869995,
+        "lr": 0.00015,
+        "physics_weight": 0.0064
+      },
+      {
+        "epoch": 630,
+        "train_mse": 5.599391937255859,
+        "train_physics": 50.0,
+        "val_loss": 4.200876235961914,
+        "val_mae": 1.6907397508621216,
+        "lr": 0.00015,
+        "physics_weight": 0.006600000000000001
+      },
+      {
+        "epoch": 640,
+        "train_mse": 1.3476935744285583,
+        "train_physics": 50.0,
+        "val_loss": 11.100324630737305,
+        "val_mae": 2.968531370162964,
+        "lr": 0.00015,
+        "physics_weight": 0.0068000000000000005
+      },
+      {
+        "epoch": 650,
+        "train_mse": 1.6407066464424134,
+        "train_physics": 50.0,
+        "val_loss": 1.9491965770721436,
+        "val_mae": 1.1675413846969604,
+        "lr": 7.5e-05,
+        "physics_weight": 0.006999999999999999
+      },
+      {
+        "epoch": 660,
+        "train_mse": 1.400399923324585,
+        "train_physics": 50.0,
+        "val_loss": 1.9668140411376953,
+        "val_mae": 1.1636886596679688,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0072
+      },
+      {
+        "epoch": 670,
+        "train_mse": 1.1582526922225953,
+        "train_physics": 50.0,
+        "val_loss": 1.0742988586425781,
+        "val_mae": 0.859944760799408,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0074
+      },
+      {
+        "epoch": 680,
+        "train_mse": 0.804703438282013,
+        "train_physics": 50.0,
+        "val_loss": 1.3306517601013184,
+        "val_mae": 0.8908655047416687,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0076
+      },
+      {
+        "epoch": 690,
+        "train_mse": 1.842461109161377,
+        "train_physics": 50.0,
+        "val_loss": 1.3564162254333496,
+        "val_mae": 0.8909149169921875,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0078000000000000005
+      },
+      {
+        "epoch": 700,
+        "train_mse": 1.2525274395942687,
+        "train_physics": 50.0,
+        "val_loss": 1.5196011066436768,
+        "val_mae": 0.9799618721008301,
+        "lr": 7.5e-05,
+        "physics_weight": 0.008
+      },
+      {
+        "epoch": 710,
+        "train_mse": 1.8792930006980897,
+        "train_physics": 50.0,
+        "val_loss": 3.213832139968872,
+        "val_mae": 1.4372678995132446,
+        "lr": 7.5e-05,
+        "physics_weight": 0.008199999999999999
+      },
+      {
+        "epoch": 720,
+        "train_mse": 1.3640756607055664,
+        "train_physics": 50.0,
+        "val_loss": 2.140758514404297,
+        "val_mae": 1.1648890972137451,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0084
+      },
+      {
+        "epoch": 730,
+        "train_mse": 0.6538771033287049,
+        "train_physics": 50.0,
+        "val_loss": 1.1429362297058105,
+        "val_mae": 0.8989529609680176,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0086
+      },
+      {
+        "epoch": 740,
+        "train_mse": 1.335180401802063,
+        "train_physics": 50.0,
+        "val_loss": 1.373066782951355,
+        "val_mae": 1.0032044649124146,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0088
+      },
+      {
+        "epoch": 750,
+        "train_mse": 3.2382390975952147,
+        "train_physics": 50.0,
+        "val_loss": 1.6496212482452393,
+        "val_mae": 1.027854323387146,
+        "lr": 7.5e-05,
+        "physics_weight": 0.009000000000000001
+      },
+      {
+        "epoch": 760,
+        "train_mse": 2.6278316974639893,
+        "train_physics": 50.0,
+        "val_loss": 2.0418941974639893,
+        "val_mae": 1.2116711139678955,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0092
+      },
+      {
+        "epoch": 770,
+        "train_mse": 0.647704666852951,
+        "train_physics": 50.0,
+        "val_loss": 0.529262125492096,
+        "val_mae": 0.5626580119132996,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0094
+      },
+      {
+        "epoch": 780,
+        "train_mse": 1.1640577435493469,
+        "train_physics": 50.0,
+        "val_loss": 2.0411651134490967,
+        "val_mae": 0.993535041809082,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0096
+      },
+      {
+        "epoch": 790,
+        "train_mse": 1.0360469698905945,
+        "train_physics": 50.0,
+        "val_loss": 1.3905425071716309,
+        "val_mae": 0.9193581342697144,
+        "lr": 7.5e-05,
+        "physics_weight": 0.0098
+      },
+      {
+        "epoch": 800,
+        "train_mse": 0.9320848107337951,
+        "train_physics": 50.0,
+        "val_loss": 2.5565006732940674,
+        "val_mae": 1.3243839740753174,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 810,
+        "train_mse": 1.218390691280365,
+        "train_physics": 50.0,
+        "val_loss": 2.226780891418457,
+        "val_mae": 1.1519094705581665,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 820,
+        "train_mse": 1.8366798281669616,
+        "train_physics": 50.0,
+        "val_loss": 3.5937182903289795,
+        "val_mae": 1.5931278467178345,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 830,
+        "train_mse": 0.5484414577484131,
+        "train_physics": 50.0,
+        "val_loss": 2.251537322998047,
+        "val_mae": 1.2432142496109009,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 840,
+        "train_mse": 1.417652142047882,
+        "train_physics": 50.0,
+        "val_loss": 0.6089226007461548,
+        "val_mae": 0.6429020762443542,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 850,
+        "train_mse": 1.9678221702575684,
+        "train_physics": 50.0,
+        "val_loss": 2.87324857711792,
+        "val_mae": 1.4820497035980225,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 860,
+        "train_mse": 1.8305055618286132,
+        "train_physics": 50.0,
+        "val_loss": 3.19932222366333,
+        "val_mae": 1.2676578760147095,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 870,
+        "train_mse": 0.8508280038833618,
+        "train_physics": 50.0,
+        "val_loss": 1.1103161573410034,
+        "val_mae": 0.8722313642501831,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 880,
+        "train_mse": 1.5059706568717957,
+        "train_physics": 50.0,
+        "val_loss": 3.1950864791870117,
+        "val_mae": 1.3368234634399414,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 890,
+        "train_mse": 0.9674048781394958,
+        "train_physics": 50.0,
+        "val_loss": 1.7040128707885742,
+        "val_mae": 1.0184897184371948,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 900,
+        "train_mse": 3.5904061555862428,
+        "train_physics": 50.0,
+        "val_loss": 1.9184414148330688,
+        "val_mae": 1.1764742136001587,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 910,
+        "train_mse": 1.6739075243473054,
+        "train_physics": 50.0,
+        "val_loss": 3.984771490097046,
+        "val_mae": 1.678031325340271,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 920,
+        "train_mse": 0.8454699158668518,
+        "train_physics": 50.0,
+        "val_loss": 5.254753589630127,
+        "val_mae": 1.901571273803711,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 930,
+        "train_mse": 1.937407422065735,
+        "train_physics": 50.0,
+        "val_loss": 0.5805558562278748,
+        "val_mae": 0.6122864484786987,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 940,
+        "train_mse": 0.4850569307804108,
+        "train_physics": 50.0,
+        "val_loss": 1.419816493988037,
+        "val_mae": 0.918353796005249,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 950,
+        "train_mse": 1.9691776990890504,
+        "train_physics": 50.0,
+        "val_loss": 0.6044950485229492,
+        "val_mae": 0.6416627764701843,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 960,
+        "train_mse": 0.8484593391418457,
+        "train_physics": 50.0,
+        "val_loss": 1.0526927709579468,
+        "val_mae": 0.8448858857154846,
+        "lr": 7.5e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 970,
+        "train_mse": 0.8188944011926651,
+        "train_physics": 50.0,
+        "val_loss": 0.555427074432373,
+        "val_mae": 0.6084486246109009,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 980,
+        "train_mse": 0.3837788164615631,
+        "train_physics": 50.0,
+        "val_loss": 0.5526081323623657,
+        "val_mae": 0.5724325180053711,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 990,
+        "train_mse": 0.3999486714601517,
+        "train_physics": 50.0,
+        "val_loss": 0.45934978127479553,
+        "val_mae": 0.5158041715621948,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1000,
+        "train_mse": 0.2992735832929611,
+        "train_physics": 50.0,
+        "val_loss": 0.8948723077774048,
+        "val_mae": 0.7075308561325073,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1010,
+        "train_mse": 0.6201844453811646,
+        "train_physics": 50.0,
+        "val_loss": 0.5434041023254395,
+        "val_mae": 0.5761747360229492,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1020,
+        "train_mse": 0.9293410420417786,
+        "train_physics": 50.0,
+        "val_loss": 0.7398953437805176,
+        "val_mae": 0.7279559969902039,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1030,
+        "train_mse": 0.42446879148483274,
+        "train_physics": 50.0,
+        "val_loss": 0.9369983673095703,
+        "val_mae": 0.8024712800979614,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1040,
+        "train_mse": 0.7621626853942871,
+        "train_physics": 50.0,
+        "val_loss": 0.4452808201313019,
+        "val_mae": 0.5286158323287964,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1050,
+        "train_mse": 0.482746958732605,
+        "train_physics": 50.0,
+        "val_loss": 0.623362123966217,
+        "val_mae": 0.6223495602607727,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1060,
+        "train_mse": 0.4655962109565735,
+        "train_physics": 50.0,
+        "val_loss": 0.415854811668396,
+        "val_mae": 0.5196986794471741,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1070,
+        "train_mse": 0.37102131843566893,
+        "train_physics": 50.0,
+        "val_loss": 1.0018670558929443,
+        "val_mae": 0.7095133662223816,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1080,
+        "train_mse": 0.44298418164253234,
+        "train_physics": 50.0,
+        "val_loss": 0.7688278555870056,
+        "val_mae": 0.6624200940132141,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1090,
+        "train_mse": 0.6547916889190674,
+        "train_physics": 50.0,
+        "val_loss": 1.79179048538208,
+        "val_mae": 1.1307202577590942,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1100,
+        "train_mse": 0.47400065064430236,
+        "train_physics": 50.0,
+        "val_loss": 0.35393521189689636,
+        "val_mae": 0.48140832781791687,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1110,
+        "train_mse": 0.5470771729946137,
+        "train_physics": 50.0,
+        "val_loss": 1.3487311601638794,
+        "val_mae": 0.9106298089027405,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1120,
+        "train_mse": 1.1502082407474519,
+        "train_physics": 50.0,
+        "val_loss": 1.1026748418807983,
+        "val_mae": 0.7715235948562622,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1130,
+        "train_mse": 0.4728076696395874,
+        "train_physics": 50.0,
+        "val_loss": 0.5347951650619507,
+        "val_mae": 0.5547634363174438,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1140,
+        "train_mse": 0.5330127477645874,
+        "train_physics": 50.0,
+        "val_loss": 1.2044768333435059,
+        "val_mae": 0.9004940986633301,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1150,
+        "train_mse": 0.4516170501708984,
+        "train_physics": 50.0,
+        "val_loss": 0.43309468030929565,
+        "val_mae": 0.5284103155136108,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1160,
+        "train_mse": 0.3239723056554794,
+        "train_physics": 50.0,
+        "val_loss": 0.7931640148162842,
+        "val_mae": 0.6802785992622375,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1170,
+        "train_mse": 0.33164468705654143,
+        "train_physics": 50.0,
+        "val_loss": 0.8585317730903625,
+        "val_mae": 0.7027250528335571,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1180,
+        "train_mse": 0.5330895364284516,
+        "train_physics": 50.0,
+        "val_loss": 0.35089004039764404,
+        "val_mae": 0.447589248418808,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1190,
+        "train_mse": 0.429778528213501,
+        "train_physics": 50.0,
+        "val_loss": 0.4479115605354309,
+        "val_mae": 0.48957768082618713,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1200,
+        "train_mse": 0.41239029467105864,
+        "train_physics": 50.0,
+        "val_loss": 0.9195655584335327,
+        "val_mae": 0.7299401760101318,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1210,
+        "train_mse": 0.7626074075698852,
+        "train_physics": 50.0,
+        "val_loss": 1.1667450666427612,
+        "val_mae": 0.9157059192657471,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1220,
+        "train_mse": 0.6465071409940719,
+        "train_physics": 50.0,
+        "val_loss": 1.4795278310775757,
+        "val_mae": 1.0274993181228638,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1230,
+        "train_mse": 0.3413973808288574,
+        "train_physics": 50.0,
+        "val_loss": 0.6508504748344421,
+        "val_mae": 0.6989083290100098,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1240,
+        "train_mse": 0.6144247591495514,
+        "train_physics": 50.0,
+        "val_loss": 0.8412240147590637,
+        "val_mae": 0.700496256351471,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1250,
+        "train_mse": 0.44366108179092406,
+        "train_physics": 50.0,
+        "val_loss": 0.9948735237121582,
+        "val_mae": 0.7925877571105957,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1260,
+        "train_mse": 0.6248993337154388,
+        "train_physics": 50.0,
+        "val_loss": 1.3963593244552612,
+        "val_mae": 0.9693177342414856,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1270,
+        "train_mse": 0.3939940005540848,
+        "train_physics": 50.0,
+        "val_loss": 0.48524269461631775,
+        "val_mae": 0.5552535653114319,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1280,
+        "train_mse": 0.41867115497589114,
+        "train_physics": 50.0,
+        "val_loss": 0.5413184762001038,
+        "val_mae": 0.625916600227356,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1290,
+        "train_mse": 0.368682736158371,
+        "train_physics": 50.0,
+        "val_loss": 1.000502347946167,
+        "val_mae": 0.8516472578048706,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1300,
+        "train_mse": 0.3303156465291977,
+        "train_physics": 50.0,
+        "val_loss": 0.8724779486656189,
+        "val_mae": 0.7794825434684753,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1310,
+        "train_mse": 0.46177000403404234,
+        "train_physics": 50.0,
+        "val_loss": 0.5175062417984009,
+        "val_mae": 0.5666579008102417,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1320,
+        "train_mse": 0.5809640526771546,
+        "train_physics": 50.0,
+        "val_loss": 0.4399958550930023,
+        "val_mae": 0.5095718502998352,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1330,
+        "train_mse": 0.42858601063489915,
+        "train_physics": 50.0,
+        "val_loss": 0.46277615427970886,
+        "val_mae": 0.5643144845962524,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1340,
+        "train_mse": 0.5987355411052704,
+        "train_physics": 50.0,
+        "val_loss": 0.35601428151130676,
+        "val_mae": 0.47002604603767395,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1350,
+        "train_mse": 0.41737927198410035,
+        "train_physics": 50.0,
+        "val_loss": 0.3409115970134735,
+        "val_mae": 0.4417417645454407,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1360,
+        "train_mse": 0.3471668899059296,
+        "train_physics": 50.0,
+        "val_loss": 0.38635435700416565,
+        "val_mae": 0.49207520484924316,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1370,
+        "train_mse": 0.6744832098484039,
+        "train_physics": 50.0,
+        "val_loss": 1.1100335121154785,
+        "val_mae": 0.8051871657371521,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1380,
+        "train_mse": 0.33302644491195676,
+        "train_physics": 50.0,
+        "val_loss": 0.39755600690841675,
+        "val_mae": 0.5085209012031555,
+        "lr": 3.75e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1390,
+        "train_mse": 0.8195467472076416,
+        "train_physics": 50.0,
+        "val_loss": 0.8540846109390259,
+        "val_mae": 0.7910810708999634,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1400,
+        "train_mse": 0.37806116342544555,
+        "train_physics": 50.0,
+        "val_loss": 0.7597123384475708,
+        "val_mae": 0.7226893305778503,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1410,
+        "train_mse": 0.33875490725040436,
+        "train_physics": 50.0,
+        "val_loss": 0.38889551162719727,
+        "val_mae": 0.4807319641113281,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1420,
+        "train_mse": 0.28274470567703247,
+        "train_physics": 50.0,
+        "val_loss": 0.3150709271430969,
+        "val_mae": 0.4281010627746582,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1430,
+        "train_mse": 0.2792069733142853,
+        "train_physics": 50.0,
+        "val_loss": 0.30394938588142395,
+        "val_mae": 0.4017348289489746,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1440,
+        "train_mse": 0.18840593844652176,
+        "train_physics": 50.0,
+        "val_loss": 0.5126544237136841,
+        "val_mae": 0.5623380541801453,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1450,
+        "train_mse": 0.26048414260149,
+        "train_physics": 50.0,
+        "val_loss": 0.6771708726882935,
+        "val_mae": 0.6834039688110352,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1460,
+        "train_mse": 0.2502585560083389,
+        "train_physics": 50.0,
+        "val_loss": 0.39214128255844116,
+        "val_mae": 0.5056395530700684,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1470,
+        "train_mse": 0.321449539065361,
+        "train_physics": 50.0,
+        "val_loss": 0.5546114444732666,
+        "val_mae": 0.611015796661377,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1480,
+        "train_mse": 0.23022270798683167,
+        "train_physics": 50.0,
+        "val_loss": 0.219642773270607,
+        "val_mae": 0.33980825543403625,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1490,
+        "train_mse": 0.31076930165290834,
+        "train_physics": 50.0,
+        "val_loss": 0.2850017547607422,
+        "val_mae": 0.40479880571365356,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1500,
+        "train_mse": 0.2475614696741104,
+        "train_physics": 50.0,
+        "val_loss": 0.49211758375167847,
+        "val_mae": 0.542453408241272,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1510,
+        "train_mse": 0.1968978762626648,
+        "train_physics": 50.0,
+        "val_loss": 0.368249773979187,
+        "val_mae": 0.46044015884399414,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1520,
+        "train_mse": 0.20917440950870514,
+        "train_physics": 50.0,
+        "val_loss": 0.27452579140663147,
+        "val_mae": 0.38546761870384216,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1530,
+        "train_mse": 0.2515381082892418,
+        "train_physics": 50.0,
+        "val_loss": 0.39802464842796326,
+        "val_mae": 0.5442749261856079,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1540,
+        "train_mse": 0.43581456542015073,
+        "train_physics": 50.0,
+        "val_loss": 0.3105089068412781,
+        "val_mae": 0.44982749223709106,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1550,
+        "train_mse": 0.2658039599657059,
+        "train_physics": 50.0,
+        "val_loss": 0.24106037616729736,
+        "val_mae": 0.3741253912448883,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1560,
+        "train_mse": 0.20009227991104125,
+        "train_physics": 50.0,
+        "val_loss": 0.5806642174720764,
+        "val_mae": 0.588659942150116,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1570,
+        "train_mse": 0.23644739687442778,
+        "train_physics": 50.0,
+        "val_loss": 0.48580020666122437,
+        "val_mae": 0.5435883402824402,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1580,
+        "train_mse": 0.19768522679805756,
+        "train_physics": 50.0,
+        "val_loss": 0.49129268527030945,
+        "val_mae": 0.5267727375030518,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1590,
+        "train_mse": 0.41490802764892576,
+        "train_physics": 50.0,
+        "val_loss": 0.34761112928390503,
+        "val_mae": 0.4526992738246918,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1600,
+        "train_mse": 0.36606993079185485,
+        "train_physics": 50.0,
+        "val_loss": 0.30213624238967896,
+        "val_mae": 0.4286699593067169,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1610,
+        "train_mse": 0.20213167667388915,
+        "train_physics": 50.0,
+        "val_loss": 0.37622541189193726,
+        "val_mae": 0.4632338881492615,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1620,
+        "train_mse": 0.2099869281053543,
+        "train_physics": 50.0,
+        "val_loss": 0.32543402910232544,
+        "val_mae": 0.43491262197494507,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1630,
+        "train_mse": 0.2975681722164154,
+        "train_physics": 50.0,
+        "val_loss": 0.2654520571231842,
+        "val_mae": 0.40666258335113525,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1640,
+        "train_mse": 0.31338574588298795,
+        "train_physics": 50.0,
+        "val_loss": 0.22578081488609314,
+        "val_mae": 0.3631669878959656,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1650,
+        "train_mse": 0.2580765038728714,
+        "train_physics": 50.0,
+        "val_loss": 0.44830796122550964,
+        "val_mae": 0.5462876558303833,
+        "lr": 1.875e-05,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1660,
+        "train_mse": 0.17882202416658402,
+        "train_physics": 50.0,
+        "val_loss": 0.22080008685588837,
+        "val_mae": 0.34069356322288513,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1670,
+        "train_mse": 0.17224013209342956,
+        "train_physics": 50.0,
+        "val_loss": 0.24534809589385986,
+        "val_mae": 0.37153545022010803,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1680,
+        "train_mse": 0.17085109651088715,
+        "train_physics": 50.0,
+        "val_loss": 0.19091910123825073,
+        "val_mae": 0.31017234921455383,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1690,
+        "train_mse": 0.21087767481803893,
+        "train_physics": 50.0,
+        "val_loss": 0.24632492661476135,
+        "val_mae": 0.3765239715576172,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1700,
+        "train_mse": 0.15444809943437576,
+        "train_physics": 50.0,
+        "val_loss": 0.21990269422531128,
+        "val_mae": 0.34445706009864807,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1710,
+        "train_mse": 0.1602587953209877,
+        "train_physics": 50.0,
+        "val_loss": 0.22625629603862762,
+        "val_mae": 0.3589297831058502,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1720,
+        "train_mse": 0.190102618932724,
+        "train_physics": 50.0,
+        "val_loss": 0.2164800614118576,
+        "val_mae": 0.3292665481567383,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1730,
+        "train_mse": 0.18690218925476074,
+        "train_physics": 50.0,
+        "val_loss": 0.3420785963535309,
+        "val_mae": 0.47620654106140137,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1740,
+        "train_mse": 0.16125089824199676,
+        "train_physics": 50.0,
+        "val_loss": 0.21919091045856476,
+        "val_mae": 0.3438607454299927,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1750,
+        "train_mse": 0.15840062797069548,
+        "train_physics": 50.0,
+        "val_loss": 0.21254874765872955,
+        "val_mae": 0.34049370884895325,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1760,
+        "train_mse": 0.15379426777362823,
+        "train_physics": 50.0,
+        "val_loss": 0.2331964075565338,
+        "val_mae": 0.36496758460998535,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1770,
+        "train_mse": 0.20273734629154205,
+        "train_physics": 50.0,
+        "val_loss": 0.25512048602104187,
+        "val_mae": 0.3832927644252777,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1780,
+        "train_mse": 0.15027814954519272,
+        "train_physics": 50.0,
+        "val_loss": 0.23856183886528015,
+        "val_mae": 0.3663052022457123,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1790,
+        "train_mse": 0.20500825047492982,
+        "train_physics": 50.0,
+        "val_loss": 0.27274855971336365,
+        "val_mae": 0.39196720719337463,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1800,
+        "train_mse": 0.15502429604530335,
+        "train_physics": 50.0,
+        "val_loss": 0.25842636823654175,
+        "val_mae": 0.4015726149082184,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1810,
+        "train_mse": 0.16305480599403382,
+        "train_physics": 50.0,
+        "val_loss": 0.18445377051830292,
+        "val_mae": 0.30930399894714355,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1820,
+        "train_mse": 0.1595961332321167,
+        "train_physics": 50.0,
+        "val_loss": 0.1940254271030426,
+        "val_mae": 0.3234127461910248,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1830,
+        "train_mse": 0.16077660620212555,
+        "train_physics": 50.0,
+        "val_loss": 0.28687137365341187,
+        "val_mae": 0.4269530177116394,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1840,
+        "train_mse": 0.14639527797698976,
+        "train_physics": 50.0,
+        "val_loss": 0.2759720981121063,
+        "val_mae": 0.37917038798332214,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1850,
+        "train_mse": 0.2024967759847641,
+        "train_physics": 50.0,
+        "val_loss": 0.2109719216823578,
+        "val_mae": 0.34734830260276794,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1860,
+        "train_mse": 0.14581465274095534,
+        "train_physics": 50.0,
+        "val_loss": 0.27857422828674316,
+        "val_mae": 0.40758562088012695,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1870,
+        "train_mse": 0.18044157922267914,
+        "train_physics": 50.0,
+        "val_loss": 0.29366645216941833,
+        "val_mae": 0.4116746187210083,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1880,
+        "train_mse": 0.13604445606470109,
+        "train_physics": 50.0,
+        "val_loss": 0.33756089210510254,
+        "val_mae": 0.4669705629348755,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1890,
+        "train_mse": 0.16494599133729934,
+        "train_physics": 50.0,
+        "val_loss": 0.2471410632133484,
+        "val_mae": 0.36515581607818604,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1900,
+        "train_mse": 0.17182792723178864,
+        "train_physics": 50.0,
+        "val_loss": 0.2722814977169037,
+        "val_mae": 0.39943817257881165,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1910,
+        "train_mse": 0.17974833548069,
+        "train_physics": 50.0,
+        "val_loss": 0.24630139768123627,
+        "val_mae": 0.38092055916786194,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1920,
+        "train_mse": 0.18423642516136168,
+        "train_physics": 50.0,
+        "val_loss": 0.20200921595096588,
+        "val_mae": 0.3563532531261444,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1930,
+        "train_mse": 0.15738422125577928,
+        "train_physics": 50.0,
+        "val_loss": 0.19280989468097687,
+        "val_mae": 0.30651751160621643,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1940,
+        "train_mse": 0.13488237857818602,
+        "train_physics": 50.0,
+        "val_loss": 0.21708527207374573,
+        "val_mae": 0.3443076014518738,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1950,
+        "train_mse": 0.14533168077468872,
+        "train_physics": 50.0,
+        "val_loss": 0.17774301767349243,
+        "val_mae": 0.3076571226119995,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1960,
+        "train_mse": 0.169011652469635,
+        "train_physics": 50.0,
+        "val_loss": 0.20579765737056732,
+        "val_mae": 0.3329688608646393,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1970,
+        "train_mse": 0.14811135083436966,
+        "train_physics": 50.0,
+        "val_loss": 0.2493380755186081,
+        "val_mae": 0.41457921266555786,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1980,
+        "train_mse": 0.15007476806640624,
+        "train_physics": 50.0,
+        "val_loss": 0.18417009711265564,
+        "val_mae": 0.3150620460510254,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 1990,
+        "train_mse": 0.14715009331703185,
+        "train_physics": 50.0,
+        "val_loss": 0.17540211975574493,
+        "val_mae": 0.29919376969337463,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2000,
+        "train_mse": 0.21672857999801637,
+        "train_physics": 50.0,
+        "val_loss": 0.20295868813991547,
+        "val_mae": 0.3363112509250641,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2010,
+        "train_mse": 0.16237081587314606,
+        "train_physics": 50.0,
+        "val_loss": 0.24906963109970093,
+        "val_mae": 0.37271949648857117,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2020,
+        "train_mse": 0.13932919800281524,
+        "train_physics": 50.0,
+        "val_loss": 0.18305173516273499,
+        "val_mae": 0.3149082064628601,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2030,
+        "train_mse": 0.16146565973758698,
+        "train_physics": 50.0,
+        "val_loss": 0.20806297659873962,
+        "val_mae": 0.32644006609916687,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2040,
+        "train_mse": 0.15672694146633148,
+        "train_physics": 50.0,
+        "val_loss": 0.21179498732089996,
+        "val_mae": 0.3410281836986542,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2050,
+        "train_mse": 0.16478875577449797,
+        "train_physics": 50.0,
+        "val_loss": 0.17149502038955688,
+        "val_mae": 0.29733872413635254,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2060,
+        "train_mse": 0.14497586190700532,
+        "train_physics": 50.0,
+        "val_loss": 0.1800404042005539,
+        "val_mae": 0.3216208219528198,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2070,
+        "train_mse": 0.1504070796072483,
+        "train_physics": 50.0,
+        "val_loss": 0.2038722038269043,
+        "val_mae": 0.32810819149017334,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2080,
+        "train_mse": 0.15708281844854355,
+        "train_physics": 50.0,
+        "val_loss": 0.28096500039100647,
+        "val_mae": 0.40831631422042847,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2090,
+        "train_mse": 0.19190504997968674,
+        "train_physics": 50.0,
+        "val_loss": 0.21400617063045502,
+        "val_mae": 0.3418678045272827,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2100,
+        "train_mse": 0.13174965381622314,
+        "train_physics": 50.0,
+        "val_loss": 0.19624648988246918,
+        "val_mae": 0.3146454691886902,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2110,
+        "train_mse": 0.17427182495594024,
+        "train_physics": 50.0,
+        "val_loss": 0.18953320384025574,
+        "val_mae": 0.31167376041412354,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2120,
+        "train_mse": 0.12029196470975875,
+        "train_physics": 50.0,
+        "val_loss": 0.17997613549232483,
+        "val_mae": 0.3164108991622925,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2130,
+        "train_mse": 0.162508961558342,
+        "train_physics": 50.0,
+        "val_loss": 0.22416943311691284,
+        "val_mae": 0.3462628722190857,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2140,
+        "train_mse": 0.16446684598922728,
+        "train_physics": 50.0,
+        "val_loss": 0.2634560763835907,
+        "val_mae": 0.3971955478191376,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2150,
+        "train_mse": 0.19021973609924317,
+        "train_physics": 50.0,
+        "val_loss": 0.22108864784240723,
+        "val_mae": 0.352791965007782,
+        "lr": 9.375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2160,
+        "train_mse": 0.1361074537038803,
+        "train_physics": 50.0,
+        "val_loss": 0.19706977903842926,
+        "val_mae": 0.3174821138381958,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2170,
+        "train_mse": 0.13845013380050658,
+        "train_physics": 50.0,
+        "val_loss": 0.21645478904247284,
+        "val_mae": 0.3363547623157501,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2180,
+        "train_mse": 0.14219679087400436,
+        "train_physics": 50.0,
+        "val_loss": 0.21466442942619324,
+        "val_mae": 0.34088215231895447,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2190,
+        "train_mse": 0.19206663519144057,
+        "train_physics": 50.0,
+        "val_loss": 0.16816319525241852,
+        "val_mae": 0.2956644892692566,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2200,
+        "train_mse": 0.12623709738254546,
+        "train_physics": 50.0,
+        "val_loss": 0.18932276964187622,
+        "val_mae": 0.3108225166797638,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2210,
+        "train_mse": 0.139766725897789,
+        "train_physics": 50.0,
+        "val_loss": 0.2056039571762085,
+        "val_mae": 0.32676035165786743,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2220,
+        "train_mse": 0.127689927816391,
+        "train_physics": 50.0,
+        "val_loss": 0.1816660612821579,
+        "val_mae": 0.3061891794204712,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2230,
+        "train_mse": 0.1524823099374771,
+        "train_physics": 50.0,
+        "val_loss": 0.1918022632598877,
+        "val_mae": 0.3233281373977661,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2240,
+        "train_mse": 0.17156930267810822,
+        "train_physics": 50.0,
+        "val_loss": 0.18429894745349884,
+        "val_mae": 0.3272150456905365,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2250,
+        "train_mse": 0.12954975217580794,
+        "train_physics": 50.0,
+        "val_loss": 0.19401827454566956,
+        "val_mae": 0.3176124691963196,
+        "lr": 4.6875e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2260,
+        "train_mse": 0.13758888244628906,
+        "train_physics": 50.0,
+        "val_loss": 0.22016672790050507,
+        "val_mae": 0.34585121273994446,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2270,
+        "train_mse": 0.12322271168231964,
+        "train_physics": 50.0,
+        "val_loss": 0.1775476038455963,
+        "val_mae": 0.29965269565582275,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2280,
+        "train_mse": 0.1307235836982727,
+        "train_physics": 50.0,
+        "val_loss": 0.1681310534477234,
+        "val_mae": 0.28871917724609375,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2290,
+        "train_mse": 0.11285551786422729,
+        "train_physics": 50.0,
+        "val_loss": 0.17146725952625275,
+        "val_mae": 0.2935381233692169,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2300,
+        "train_mse": 0.17702998518943786,
+        "train_physics": 50.0,
+        "val_loss": 0.1776438057422638,
+        "val_mae": 0.29896482825279236,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2310,
+        "train_mse": 0.12944765090942384,
+        "train_physics": 50.0,
+        "val_loss": 0.19731096923351288,
+        "val_mae": 0.3232329487800598,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2320,
+        "train_mse": 0.12526699006557465,
+        "train_physics": 50.0,
+        "val_loss": 0.1664762794971466,
+        "val_mae": 0.28838619589805603,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2330,
+        "train_mse": 0.12948596626520156,
+        "train_physics": 50.0,
+        "val_loss": 0.180655837059021,
+        "val_mae": 0.2975858449935913,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2340,
+        "train_mse": 0.1377036988735199,
+        "train_physics": 50.0,
+        "val_loss": 0.1933860331773758,
+        "val_mae": 0.3144647479057312,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      },
+      {
+        "epoch": 2350,
+        "train_mse": 0.13968599438667298,
+        "train_physics": 50.0,
+        "val_loss": 0.17598672211170197,
+        "val_mae": 0.2985599637031555,
+        "lr": 2.34375e-06,
+        "physics_weight": 0.01
+      }
+    ],
+    "pinn_mse": 0.16610422730445862,
+    "pinn_mae": 0.2886278033256531,
+    "pinn_rmse": 0.40755886360679067,
+    "bs_mse": 30.6492261634509,
+    "bs_mae": 3.47823209199408,
+    "bs_rmse": 5.536174325601651,
+    "r_squared": 0.9999441504478455,
+    "correlation": 0.9999726532499854,
+    "improvement_mse_pct": 99.45804756564283,
+    "greeks_check": {
+      "params": {
+        "S": 272.14,
+        "K": 270,
+        "T": 0.5,
+        "sigma": 0.32202769845339957,
+        "r": 0.05
+      },
+      "pinn": {
+        "price": 25.310962677001953,
+        "delta": 0.45707306265830994,
+        "gamma": 0.11792398244142532,
+        "vega": 0.15679267883300782,
+        "theta": -0.06908254231492134,
+        "rho": 119055.57
+      },
+      "bs": {
+        "delta": 0.6019176817323774,
+        "gamma": 0.006226587128253773,
+        "vega": 0.7425027438550584
+      }
+    }
+  },
+  "hedging": {
+    "training_time_seconds": 3217.7317507267,
+    "rl_mean_pnl": 1.6013456931564187,
+    "rl_std_pnl": 2.7886547730261584,
+    "rl_sharpe": 18.231424669375386,
+    "rl_min_pnl": -7.558774300779895,
+    "rl_max_pnl": 8.805295475922549,
+    "bs_mean_pnl": 1.7082999932246747,
+    "bs_std_pnl": 2.1796309018496505,
+    "bs_sharpe": 24.883498883379296,
+    "bs_min_pnl": -6.780083002956047,
+    "bs_max_pnl": 9.775473501780368,
+    "rewards_history": [
+      {
+        "step": 100000,
+        "mean_reward": -0.23476968999999998
+      },
+      {
+        "step": 200000,
+        "mean_reward": -0.13894724000000003
+      },
+      {
+        "step": 300000,
+        "mean_reward": -0.16197596999999997
+      },
+      {
+        "step": 400000,
+        "mean_reward": -0.10813389
+      },
+      {
+        "step": 500000,
+        "mean_reward": -0.09869792000000001
+      },
+      {
+        "step": 600000,
+        "mean_reward": -0.06524023
+      },
+      {
+        "step": 700000,
+        "mean_reward": -0.04491733
+      },
+      {
+        "step": 800000,
+        "mean_reward": -0.036729370000000004
+      },
+      {
+        "step": 900000,
+        "mean_reward": -0.043211410000000006
+      },
+      {
+        "step": 1000000,
+        "mean_reward": -0.017053
+      },
+      {
+        "step": 1100000,
+        "mean_reward": -0.014741370000000002
+      },
+      {
+        "step": 1200000,
+        "mean_reward": -0.00867573
+      },
+      {
+        "step": 1300000,
+        "mean_reward": -0.0072454400000000006
+      },
+      {
+        "step": 1400000,
+        "mean_reward": -0.005279899999999999
+      },
+      {
+        "step": 1500000,
+        "mean_reward": -0.0050641700000000015
+      },
+      {
+        "step": 1600000,
+        "mean_reward": -0.00427454
+      },
+      {
+        "step": 1700000,
+        "mean_reward": -0.00451299
+      },
+      {
+        "step": 1800000,
+        "mean_reward": -0.005026500000000001
+      },
+      {
+        "step": 1900000,
+        "mean_reward": -0.00451915
+      },
+      {
+        "step": 2000000,
+        "mean_reward": -0.00475944
+      },
+      {
+        "step": 2100000,
+        "mean_reward": -0.00337638
+      },
+      {
+        "step": 2200000,
+        "mean_reward": -0.0034175199999999994
+      },
+      {
+        "step": 2300000,
+        "mean_reward": -0.002672
+      },
+      {
+        "step": 2400000,
+        "mean_reward": -0.00276882
+      },
+      {
+        "step": 2500000,
+        "mean_reward": -0.002727779999999999
+      },
+      {
+        "step": 2600000,
+        "mean_reward": -0.0027388499999999997
+      },
+      {
+        "step": 2700000,
+        "mean_reward": -0.00348802
+      },
+      {
+        "step": 2800000,
+        "mean_reward": -0.0038886800000000003
+      },
+      {
+        "step": 2900000,
+        "mean_reward": -0.00393162
+      },
+      {
+        "step": 3000000,
+        "mean_reward": -0.0032638400000000005
+      }
+    ],
+    "hedging_params": {
+      "S0": 272.14,
+      "K": 270,
+      "T": 0.25,
+      "r": 0.05,
+      "sigma": 0.32202769845339957,
+      "n_steps": 63
+    }
+  },
+  "config": {
+    "pinn_hidden_dims": [
+      128,
+      256,
+      256,
+      128
+    ],
+    "pinn_activation": "tanh",
+    "pinn_batch_size": 128,
+    "pinn_learning_rate": 0.0003,
+    "pinn_weight_decay": 1e-05,
+    "pinn_epochs": 3000,
+    "pinn_patience": 300,
+    "pinn_physics_weight_max": 0.01,
+    "pinn_physics_ramp_start": 300,
+    "pinn_physics_ramp_end": 800,
+    "pinn_physics_loss_cap": 50.0,
+    "augmentation_shifts": [
+      -0.2,
+      -0.15,
+      -0.1,
+      -0.05,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "augmentation_loss_weight": 0.3,
+    "risk_free_rate": 0.05,
+    "dividend_yield": 0.38,
+    "min_volume": 5,
+    "min_open_interest": 10,
+    "max_bid_ask_spread_pct": 0.5,
+    "hedging_timesteps": 3000000,
+    "hedging_learning_rate": 0.0003,
+    "hedging_gamma": 0.99,
+    "hedging_n_steps_per_episode": 63,
+    "hedging_S0": 272.14,
+    "hedging_K": 270,
+    "hedging_T": 0.25,
+    "hedging_r": 0.05,
+    "hedging_sigma": 0.32202769845339957
+  }
+}
