@@ -1,15 +1,3 @@
----
-title: Neural Network Options Pricer With Greeks And Volatility Surface
-colorFrom: gray
-colorTo: gray
-sdk: gradio
-sdk_version: 6.7.0
-app_file: app.py
-pinned: false
-license: mit
-short_description: Neural Network Options Pricer
----
-
 # Neural Network Options Pricer with Greeks and Volatility Surface
 
 A production-grade options pricing system combining Physics-Informed Neural Networks (PINNs), automatic differentiation Greeks, implied volatility surface modeling, American options pricing via Least Squares Monte Carlo, and deep reinforcement learning for optimal delta hedging. All models are trained on real AAPL options data from yfinance.
